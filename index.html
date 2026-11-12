@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101b35">
+  <meta name="description" content="Felovia College of Arts and Science and Engineering — discover programmes, admissions, campus life and student services.">
+  <title>Felovia College | Learn. Lead. Transform.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon-64.png">
+  <link rel="apple-touch-icon" href="assets/favicon-192.png">
+</head>
+<body>
+  <div class="announcement"><span class="pulse"></span> Admissions open for the 2026–27 academic year <a href="#admissions">Explore admissions <span>↗</span></a></div>
+  <header class="site-header" id="top">
+    <a class="brand" href="#home" aria-label="Felovia College home">
+      <img class="brand-logo" src="assets/felovia-crest.png" alt="Felovia College crest"><span class="brand-copy"><strong>FELOVIA</strong><small>COLLEGE OF ARTS, SCIENCE & ENGINEERING</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="main-nav" id="mainNav">
+      <a href="#about">About</a><a href="#programmes">Programmes</a><a href="#campus">Campus life</a><a href="#faculty">Faculty</a><a href="#contact">Contact</a>
+      <a href="#student-portal" class="portal-nav-link">Student Portal</a><a href="#faculty-portal" class="faculty-nav-link">Faculty Portal</a><a href="#admin-dashboard" class="admin-nav-link">Admin Dashboard</a><button class="nav-login" data-open="loginModal">Student login <span>↗</span></button>
+      <button class="theme-toggle" id="themeToggle" aria-label="Switch colour theme">☾</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-image"></div><div class="hero-shade"></div>
+      <div class="hero-content reveal">
+        <div class="eyebrow light"><span></span> A future-focused learning community</div>
+        <h1>Shape your future.<br><em>Make your mark.</em></h1>
+        <p>Discover what you're capable of at Felovia — where curious minds become confident creators, thoughtful leaders and changemakers.</p>
+        <div class="hero-actions"><a class="btn btn-gold" href="#programmes">Explore programmes <span>↗</span></a><a class="text-link light-link" href="#about">Discover Felovia <span>→</span></a></div>
+        <div class="hero-proof"><div class="avatar-stack"><i>F</i><i>C</i><i>+</i></div><span>One community. Many possibilities.</span></div>
+      </div>
+      <div class="hero-side-note">LEARN · LEAD · TRANSFORM</div>
+      <a class="scroll-cue" href="#about"><span></span> Scroll to explore</a>
+    </section>
+
+    <section class="stats-strip">
+      <div><strong>20<span>+</span></strong><small>Academic pathways</small></div><div><strong>45<span>+</span></strong><small>Expert faculty</small></div><div><strong>12<span>+</span></strong><small>Clubs & communities</small></div><div><strong>01</strong><small>Ambitious community</small></div>
+    </section>
+
+    <section class="section intro-section" id="about">
+      <div class="section-kicker">01 / THE FELOVIA DIFFERENCE</div>
+      <div class="intro-grid">
+        <div><h2 class="section-title">Education for a world that <em>keeps moving.</em></h2></div>
+        <div class="intro-copy"><p class="lead">The future belongs to people who keep asking better questions.</p><p>At Felovia College of Arts and Science and Engineering, learning goes beyond the classroom. We bring together strong foundations, hands-on experiences and a supportive campus culture to help every student find their direction.</p><a class="text-link" href="#campus">Life at Felovia <span>→</span></a></div>
+      </div>
+      <div class="value-cards">
+        <article class="value-card"><span class="card-number">01</span><div class="line-icon">✳</div><h3>Learn by doing</h3><p>Build practical skills through projects, labs, collaboration and real-world challenges.</p></article>
+        <article class="value-card featured"><span class="card-number">02</span><div class="line-icon">⌁</div><h3>Think without limits</h3><p>Connect disciplines, explore ideas and approach problems from fresh perspectives.</p></article>
+        <article class="value-card"><span class="card-number">03</span><div class="line-icon">↗</div><h3>Grow with purpose</h3><p>Find mentorship, community and opportunities that help you move forward.</p></article>
+      </div>
+    </section>
+
+    <section class="programmes-section section" id="programmes">
+      <div class="section-kicker">02 / FIND YOUR PATH</div>
+      <div class="section-heading-row"><div><h2 class="section-title">Programmes built for <em>what's next.</em></h2><p class="section-subtitle">Explore a starting point for your ambitions.</p></div><div class="search-wrap"><span>⌕</span><input id="courseSearch" type="search" placeholder="Search programmes..." aria-label="Search programmes"></div></div>
+      <div class="filter-row" id="courseFilters"><button class="filter-chip active" data-filter="all">All programmes</button><button class="filter-chip" data-filter="arts">Arts & humanities</button><button class="filter-chip" data-filter="science">Science</button><button class="filter-chip" data-filter="engineering">Engineering</button><button class="filter-chip" data-filter="commerce">Commerce</button></div>
+      <div class="course-grid" id="courseGrid">
+        <article class="course-card" data-category="engineering" data-search="computer science engineering cse technology"><div class="course-top"><span>ENGINEERING</span><span>01</span></div><div class="course-icon">⌘</div><h3>B.E. Computer Science</h3><p>Software, systems, AI and the technologies shaping tomorrow.</p><div class="course-foot"><span>Undergraduate</span><a href="#contact" aria-label="Enquire about Computer Science">↗</a></div></article>
+        <article class="course-card" data-category="science" data-search="computer science data analytics bsc"><div class="course-top"><span>SCIENCE</span><span>02</span></div><div class="course-icon">⌬</div><h3>B.Sc. Computer Science</h3><p>Build a strong foundation in computing, logic and data.</p><div class="course-foot"><span>Undergraduate</span><a href="#contact" aria-label="Enquire about BSc Computer Science">↗</a></div></article>
+        <article class="course-card" data-category="commerce" data-search="business administration bba management"><div class="course-top"><span>COMMERCE</span><span>03</span></div><div class="course-icon">▤</div><h3>B.B.A.</h3><p>Develop the confidence to lead teams and build organisations.</p><div class="course-foot"><span>Undergraduate</span><a href="#contact" aria-label="Enquire about BBA">↗</a></div></article>
+        <article class="course-card" data-category="arts" data-search="english literature ba humanities"><div class="course-top"><span>ARTS & HUMANITIES</span><span>04</span></div><div class="course-icon">✎</div><h3>B.A. English</h3><p>Explore language, literature, communication and culture.</p><div class="course-foot"><span>Undergraduate</span><a href="#contact" aria-label="Enquire about BA English">↗</a></div></article>
+        <article class="course-card" data-category="science" data-search="mathematics physics bsc science"><div class="course-top"><span>SCIENCE</span><span>05</span></div><div class="course-icon">∑</div><h3>B.Sc. Mathematics</h3><p>Strengthen analytical thinking and mathematical reasoning.</p><div class="course-foot"><span>Undergraduate</span><a href="#contact" aria-label="Enquire about Mathematics">↗</a></div></article>
+        <article class="course-card" data-category="engineering" data-search="electronics communication engineering ece"><div class="course-top"><span>ENGINEERING</span><span>06</span></div><div class="course-icon">⌁</div><h3>B.E. Electronics</h3><p>Explore connected devices, circuits and intelligent systems.</p><div class="course-foot"><span>Undergraduate</span><a href="#contact" aria-label="Enquire about Electronics">↗</a></div></article>
+      </div>
+      <p class="empty-state" id="courseEmpty" hidden>No programmes match your search. Try another keyword.</p>
+      <p class="disclaimer">Programme names shown are illustrative demo content. Replace them with approved college offerings before publishing.</p>
+    </section>
+
+    <section class="campus-section" id="campus">
+      <div class="campus-photo"></div><div class="campus-content"><div class="section-kicker light">03 / BEYOND THE CLASSROOM</div><h2 class="section-title light-title">A campus that<br><em>opens doors.</em></h2><p>Find your people, try something new and make memories that stay with you. Your college experience is made up of more than lectures.</p><div class="campus-links"><a href="#events">Student events <span>↗</span></a><a href="#gallery">Campus gallery <span>↗</span></a><a href="#contact">Clubs & activities <span>↗</span></a></div></div>
+    </section>
+
+    <section class="section events-section" id="events">
+      <div class="section-kicker">04 / WHAT'S HAPPENING</div>
+      <div class="section-heading-row"><div><h2 class="section-title">Ideas in <em>motion.</em></h2><p class="section-subtitle">A glimpse of campus conversations and experiences.</p></div><a class="text-link" href="#contact">Submit an event <span>→</span></a></div>
+      <div class="event-list">
+        <article class="event-row"><div class="event-date"><strong>18</strong><span>JUL / DEMO</span></div><div class="event-info"><span class="event-type">WORKSHOP</span><h3>Future Skills Lab</h3><p>Hands-on exploration of emerging technologies and creative problem-solving.</p></div><span class="event-arrow">↗</span></article>
+        <article class="event-row"><div class="event-date"><strong>24</strong><span>AUG / DEMO</span></div><div class="event-info"><span class="event-type">CAMPUS LIFE</span><h3>FeloFest — Culture & Creativity</h3><p>A student-led celebration of music, ideas, art and community.</p></div><span class="event-arrow">↗</span></article>
+        <article class="event-row"><div class="event-date"><strong>05</strong><span>SEP / DEMO</span></div><div class="event-info"><span class="event-type">ACADEMIC</span><h3>Research & Innovation Forum</h3><p>Share projects, exchange perspectives and meet curious minds.</p></div><span class="event-arrow">↗</span></article>
+      </div>
+      <p class="disclaimer">Event dates and titles are sample content and must be verified by the college.</p>
+    </section>
+
+    <section class="gallery-section section" id="gallery"><div class="section-kicker">05 / MOMENTS AT FELOVIA</div><div class="section-heading-row"><h2 class="section-title">Campus life, <em>in focus.</em></h2><span class="gallery-note">A visual preview · demo imagery</span></div><div class="gallery-grid"><button class="gallery-item gallery-large" data-image="https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1500&q=85" aria-label="View campus building"><img src="https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1000&q=80" alt="University campus building"><span>Spaces to explore ↗</span></button><button class="gallery-item" data-image="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1500&q=85" aria-label="View students collaborating"><img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=900&q=80" alt="Students collaborating"><span>Better together ↗</span></button><button class="gallery-item" data-image="https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&fit=crop&w=1500&q=85" aria-label="View campus event"><img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&fit=crop&w=900&q=80" alt="Students at a campus event"><span>Make it happen ↗</span></button></div></section>
+
+    <section class="section faculty-section" id="faculty"><div class="section-kicker">06 / PEOPLE WHO INSPIRE</div><div class="section-heading-row"><div><h2 class="section-title">Guided by <em>curiosity.</em></h2><p class="section-subtitle">Meet the people who make learning meaningful.</p></div></div><div class="faculty-grid"><article class="faculty-card"><div class="faculty-avatar avatar-one">DR</div><h3>Dr. Faculty Name</h3><p>Academic Leadership</p><span>Replace with verified faculty profile</span></article><article class="faculty-card"><div class="faculty-avatar avatar-two">FN</div><h3>Faculty Name</h3><p>Computer Science</p><span>Replace with verified faculty profile</span></article><article class="faculty-card"><div class="faculty-avatar avatar-three">FN</div><h3>Faculty Name</h3><p>Arts & Humanities</p><span>Replace with verified faculty profile</span></article><article class="faculty-card"><div class="faculty-avatar avatar-four">FN</div><h3>Faculty Name</h3><p>Science</p><span>Replace with verified faculty profile</span></article></div></section>
+
+    <section class="admissions-section" id="admissions"><div class="admission-shape"></div><div class="admission-inner"><div class="section-kicker light">07 / YOUR NEXT CHAPTER</div><h2>Ready to begin<br><em>something meaningful?</em></h2><p>Tell us what you're interested in. Our admissions team can help you understand the next steps.</p><a class="btn btn-gold" href="#contact">Start an enquiry <span>↗</span></a></div><div class="admission-side">2026—27<br><span>ADMISSIONS</span></div></section>
+
+    <section class="section contact-section" id="contact"><div class="section-kicker">08 / LET'S CONNECT</div><div class="contact-grid"><div><h2 class="section-title">Your questions<br>have a place <em>here.</em></h2><p class="section-subtitle">Send an enquiry and the college team can follow up with you.</p><div class="contact-detail"><span>EMAIL</span><a href="mailto:admissions@felovia.edu.in">admissions@felovia.edu.in</a></div><div class="contact-detail"><span>LOCATION</span><p>Update with the verified campus address</p></div></div><form class="enquiry-form" id="enquiryForm"><div class="form-heading"><strong>Send an enquiry</strong><span>Fields marked * are required</span></div><div class="form-row"><label>Full name *<input name="name" required minlength="2" placeholder="Your name"></label><label>Email address *<input type="email" name="email" required placeholder="you@example.com"></label></div><div class="form-row"><label>Phone number<input type="tel" name="phone" pattern="[0-9+() -]{7,18}" placeholder="+91"></label><label>Area of interest<select name="interest"><option value="">Select a programme</option><option>Arts & Humanities</option><option>Science</option><option>Engineering</option><option>Commerce</option><option>Other</option></select></label></div><label>Your message *<textarea name="message" rows="4" required minlength="10" placeholder="How can we help?"></textarea></label><label class="consent"><input type="checkbox" required> I agree to be contacted regarding this enquiry.</label><button class="btn btn-dark" type="submit">Submit enquiry <span>↗</span></button><p class="form-note" id="formMessage" role="status">Demo form: submissions are saved only in this browser. Connect a secure backend before production.</p></form></div></section>
+
+    <section class="section student-portal-section" id="student-portal">
+      <div class="section-kicker">09 / STUDENT SERVICES</div>
+      <div class="portal-intro"><div><h2 class="section-title">Your campus life,<br><em>all in one place.</em></h2><p class="section-subtitle">A student portal preview with academic records, learning resources and student service requests.</p></div><button class="btn btn-dark" id="portalOpenBtn" type="button">Open student portal <span>↗</span></button></div>
+      <div class="portal-preview-grid">
+        <article><span>01</span><b>Academic dashboard</b><p>Profile, digital ID, attendance and academic performance.</p></article>
+        <article><span>02</span><b>Learning workspace</b><p>Assignments, study materials, timetable and leave applications.</p></article>
+        <article><span>03</span><b>Student services</b><p>Fee history, certificates, academic calendar and notifications.</p></article>
+      </div>
+      <p class="disclaimer">Interactive front-end demonstration. Use sample data only; connect a secure college backend before handling real student records or payments.</p>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="footer-top"><a class="brand footer-brand" href="#home"><img class="brand-logo" src="assets/felovia-crest.png" alt="Felovia College crest"><span class="brand-copy"><strong>FELOVIA</strong><small>COLLEGE OF ARTS, SCIENCE & ENGINEERING</small></span></a><p>Curiosity creates possibility.</p><a class="back-top" href="#top">Back to top ↑</a></div><div class="footer-bottom"><span>© <span id="year"></span> Felovia College. Demo website.</span><span>Privacy · Accessibility · Terms</span><span>Designed for a brighter tomorrow.</span></div></footer>
+
+  <div class="modal" id="loginModal" aria-hidden="true"><div class="modal-backdrop" data-close></div><div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="loginTitle"><button class="modal-close" data-close aria-label="Close">×</button><div class="brand-mark">F</div><p class="section-kicker">FELOVIA PORTAL</p><h2 id="loginTitle">Welcome back.</h2><p class="modal-sub">Student and staff portal preview</p><form id="loginForm"><label>College ID<input required placeholder="Enter your college ID"></label><label>Password<input required type="password" placeholder="Enter password"></label><button class="btn btn-dark" type="submit">Continue <span>↗</span></button><p class="form-note" id="loginMessage">Demo interface only. Real authentication is not enabled.</p></form></div></div>
+
+
+  <div class="admin-modal" id="adminDashboard" aria-hidden="true">
+    <div class="admin-backdrop" data-admin-close></div>
+    <section class="admin-shell" role="dialog" aria-modal="true" aria-labelledby="adminTitle">
+      <header class="admin-top">
+        <div><span class="section-kicker">FELOVIA / CONTROL CENTRE</span><h2 id="adminTitle">Administration dashboard</h2></div>
+        <button type="button" data-admin-close aria-label="Close admin dashboard">×</button>
+      </header>
+      <div class="admin-login" id="adminLogin">
+        <div class="admin-login-visual"><span class="section-kicker">SUPER ADMIN</span><h3>Manage your<br><em>campus operations.</em></h3><p>One workspace for academic operations, student services, finance and website administration.</p></div>
+        <form id="adminLoginForm" class="admin-login-form">
+          <h3>Administrator sign in</h3>
+          <label>Admin username<input name="username" autocomplete="username" required placeholder="Enter admin username"></label>
+          <label>Password<input name="password" type="password" autocomplete="current-password" required placeholder="Enter password"></label>
+          <button class="btn btn-dark" type="submit">Open admin demo</button>
+          <p class="form-note">Prototype access only: this front-end demo accepts non-empty fields and does not authenticate an identity. Connect a secure server-side identity provider before deployment.</p>
+          <p class="admin-login-message" id="adminLoginMessage" aria-live="polite"></p>
+        </form>
+      </div>
+      <div class="admin-app" id="adminApp" hidden>
+        <aside class="admin-sidebar">
+          <div class="admin-user"><div class="admin-avatar">SA</div><b>Super Admin</b><small>Felovia control centre · Demo</small></div>
+          <nav id="adminNav">
+            <button class="active" data-admin-tab="overview">Dashboard overview</button>
+            <button data-admin-tab="students">Student management</button>
+            <button data-admin-tab="faculty">Faculty management</button>
+            <button data-admin-tab="departments">Departments</button>
+            <button data-admin-tab="courses">Courses</button>
+            <button data-admin-tab="admissions">Admissions</button>
+            <button data-admin-tab="attendance">Attendance monitoring</button>
+            <button data-admin-tab="exams">Examination management</button>
+            <button data-admin-tab="fees">Fee management</button>
+            <button data-admin-tab="notices">Notice publishing</button>
+            <button data-admin-tab="roles">User roles & permissions</button>
+            <button data-admin-tab="content">Website content</button>
+            <button data-admin-tab="reports">Reports & analytics</button>
+            <button data-admin-tab="logs">Activity & audit logs</button>
+          </nav>
+          <button class="admin-logout" id="adminLogout">Sign out</button>
+        </aside>
+        <div class="admin-content">
+          <div class="admin-content-head"><div><span class="section-kicker">SUPER ADMIN WORKSPACE</span><h3 id="adminPageTitle">Dashboard overview</h3></div><span class="admin-demo-label">FRONT-END DEMO</span></div>
+          <div id="adminPanel"></div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="portal-modal" id="studentPortal" aria-hidden="true">
+    <div class="portal-backdrop" data-portal-close></div>
+    <section class="portal-shell" role="dialog" aria-modal="true" aria-labelledby="portalTitle">
+      <header class="portal-top"><div><span class="section-kicker">FELOVIA / STUDENT SPACE</span><h2 id="portalTitle">Student portal</h2></div><button type="button" data-portal-close aria-label="Close student portal">×</button></header>
+      <div class="portal-auth" id="portalAuth">
+        <div class="portal-auth-copy"><h3>Welcome to your<br><em>learning space.</em></h3><p>Register a demo student profile or sign in to explore the portal modules.</p></div>
+        <form id="studentRegisterForm" class="portal-form"><h3>Create student profile</h3><label>Full name<input name="fullName" required minlength="2" placeholder="Student full name"></label><label>College / register ID<input name="studentId" required placeholder="e.g. FEL2026001"></label><label>Email address<input name="email" type="email" required placeholder="student@example.com"></label><label>Programme<input name="programme" required placeholder="e.g. B.Sc. Computer Science"></label><button class="btn btn-dark" type="submit">Create demo profile</button><p class="form-note">No password or sensitive credentials are stored. This is browser-only demo access.</p></form>
+        <form id="studentLoginForm" class="portal-form"><h3>Student sign in</h3><label>College / register ID<input name="studentId" required placeholder="Your register ID"></label><button class="btn btn-gold" type="submit">Continue to portal</button><p class="form-note" id="portalAuthMessage">Register a demo profile first, or use its register ID.</p></form>
+      </div>
+      <div class="portal-app" id="portalApp" hidden>
+        <aside class="portal-sidebar"><div class="portal-user"><div class="portal-avatar" id="portalInitials">ST</div><b id="portalStudentName">Student Name</b><small id="portalStudentId">Register ID</small></div><nav id="portalNav"><button class="active" data-portal-tab="overview">Overview</button><button data-portal-tab="profile">My profile & digital ID</button><button data-portal-tab="attendance">Attendance</button><button data-portal-tab="results">Marks & results</button><button data-portal-tab="learning">Assignments & materials</button><button data-portal-tab="timetable">Timetable & leave</button><button data-portal-tab="fees">Fees & payment history</button><button data-portal-tab="services">Certificate requests</button><button data-portal-tab="calendar">Academic calendar</button><button data-portal-tab="notifications">Notifications</button></nav><button id="portalLogout" class="portal-logout">Sign out</button></aside>
+        <div class="portal-content"><div class="portal-content-head"><div><span class="section-kicker">STUDENT DASHBOARD</span><h3 id="portalPageTitle">Overview</h3></div><span class="portal-demo-label">DEMO DATA</span></div><div id="portalPanel"></div></div>
+      </div>
+    </section>
+  </div>
+  <div class="portal-modal" id="facultyPortal" aria-hidden="true">
+    <div class="portal-backdrop" data-faculty-close></div>
+    <section class="portal-shell" role="dialog" aria-modal="true" aria-labelledby="facultyTitle">
+      <header class="portal-top"><div><span class="section-kicker">FELOVIA / FACULTY SPACE</span><h2 id="facultyTitle">Faculty portal</h2></div><button type="button" data-faculty-close aria-label="Close faculty portal">×</button></header>
+      <div class="portal-auth" id="facultyAuth">
+        <div class="portal-auth-copy"><h3>Empower learning.<br><em>Manage your classes.</em></h3><p>Set up a demo faculty profile or sign in to access academic and staff tools.</p></div>
+        <form id="facultyRegisterForm" class="portal-form"><h3>Create faculty profile</h3><label>Full name<input name="fullName" required placeholder="Faculty full name"></label><label>Faculty ID<input name="facultyId" required placeholder="e.g. FAC2026001"></label><label>Email address<input name="email" type="email" required placeholder="faculty@example.com"></label><label>Department / designation<input name="department" required placeholder="e.g. Computer Science"></label><button class="btn btn-dark" type="submit">Create demo profile</button><p class="form-note">Browser-only demo profile. No real authentication is enabled.</p></form>
+        <form id="facultyLoginForm" class="portal-form"><h3>Faculty sign in</h3><label>Faculty ID<input name="facultyId" required placeholder="Your faculty ID"></label><button class="btn btn-gold" type="submit">Continue to portal</button><p class="form-note" id="facultyAuthMessage">Register a demo profile first, or use its faculty ID.</p></form>
+      </div>
+      <div class="portal-app" id="facultyApp" hidden>
+        <aside class="portal-sidebar"><div class="portal-user"><div class="portal-avatar" id="facultyInitials">FC</div><b id="facultyName">Faculty Name</b><small id="facultyIdLabel">Faculty ID</small></div><nav id="facultyNav"><button class="active" data-faculty-tab="overview">Overview</button><button data-faculty-tab="profile">My profile</button><button data-faculty-tab="classes">Class management</button><button data-faculty-tab="attendance">Attendance entry</button><button data-faculty-tab="marks">Marks upload</button><button data-faculty-tab="assignments">Assignments & evaluation</button><button data-faculty-tab="materials">Study materials</button><button data-faculty-tab="timetable">Timetable</button><button data-faculty-tab="reports">Student performance</button><button data-faculty-tab="leave">Leave management</button><button data-faculty-tab="salary">Salary details</button><button data-faculty-tab="communication">Communication</button></nav><button id="facultyLogout" class="portal-logout">Sign out</button></aside>
+        <div class="portal-content"><div class="portal-content-head"><div><span class="section-kicker">FACULTY DASHBOARD</span><h3 id="facultyPageTitle">Overview</h3></div><span class="portal-demo-label">DEMO DATA</span></div><div id="facultyPanel"></div></div>
+      </div>
+    </section>
+  </div>
+  <div class="lightbox" id="lightbox" aria-hidden="true"><button class="lightbox-close" aria-label="Close image">×</button><img src="" alt="Expanded campus gallery image"></div>
+  <button class="chat-launch" id="chatLaunch" aria-label="Open Felovia assistant">✳<span>Ask Felovia</span></button>
+  <aside class="chat-panel" id="chatPanel" aria-label="Felovia assistant" aria-hidden="true"><div class="chat-head"><div><strong>Felovia Assistant</strong><small>Website demo · instant guidance</small></div><button id="chatClose" aria-label="Close assistant">×</button></div><div class="chat-messages" id="chatMessages"><div class="bot-message">Hello! I'm the Felovia demo assistant. Ask me about programmes, admissions, campus life or contact details.</div></div><div class="chat-suggestions"><button data-question="What programmes are listed?">Programmes</button><button data-question="How can I enquire?">Admissions</button></div><form id="chatForm"><input id="chatInput" placeholder="Type your question..." aria-label="Type your question"><button aria-label="Send message">↑</button></form></aside>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="app.js"></script>
+</body>
+</html>
